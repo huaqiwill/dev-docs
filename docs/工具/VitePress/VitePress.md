@@ -7,6 +7,7 @@
 * https://vitepress.dev/zh/
 * 参考 - 鱼皮 CodeFather & VuePress：https://github.com/liyupi/codefather
 * 二哥的Java之路 - VuePress：https://github.com/itwanger/toBeBetterJavaer
+* VitePress教程：https://vitepress.yiov.top/
 
 插件
 
