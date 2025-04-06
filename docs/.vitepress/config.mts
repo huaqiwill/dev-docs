@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { generateSidebar } from 'vitepress-sidebar';
+import timeline from "vitepress-markdown-timeline";
+
 
 const sidebar = [
     {
@@ -13,7 +15,17 @@ const sidebar = [
 export default defineConfig({
     title: "黎明怀羽的个人博客",
     description: "黎明怀羽的个人博客",
+    markdown: {
+        //行号显示
+        lineNumbers: true,
+
+        //时间线
+        config: (md) => {
+            md.use(timeline);
+        },
+    },
     themeConfig: {
+
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             { text: '主页', link: '/' },
