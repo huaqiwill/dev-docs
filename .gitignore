@@ -4,7 +4,8 @@ node_modules/
  
 # 构建输出 
 .cache/
-dist/
+/dist/
+/**/dist/
 .temp/  # VitePress 临时文件 
  
 # 环境变量 
@@ -25,6 +26,7 @@ yarn-debug.log*
 yarn-error.log* 
  
 # VitePress 自动生成的文件 
+/**/.vitepress/cache/ 
 /.vitepress/cache/
 /.vitepress/theme/override-components/  # 动态生成的组件（如果存在）
  

@@ -1,4 +1,4 @@
-[toc]
+
 
 # 前言
 
@@ -278,13 +278,14 @@ credential.helper=store        # 第二种是文件存储地址在 ~/.git-creden
 
 第一种需要进入启动台->其他->钥匙串访问，搜索git相关删掉目标信息。
 
-第二种需要通过vim修改~/.git-credentials文件，删除以下类似信息：
+第二种需要通过vim修改`~/.git-credentials`文件，删除以下类似信息：
 
 http://username:password@git.xxx.cn
 https://xxxx:xxxx@github.com
+
 或者统一用这种方法移除设置。
 
-```
+```sh
 #移除设置
 git config --global --unset credential.helper
 ```
@@ -294,6 +295,8 @@ git config --global --unset credential.helper
 ## Git环境
 
 Git 可以分为本地(Local)和远程(Remote)两个环境，由于Git属于分布式的版本控制系统，所以开发者可以在离线环境下开发，等有网络信号时再将自己的代码推送(push)到远程或拉取(pull)其他开发者提交的代码到本地进行整合。
+
+
 
 ## Git项目的三个阶段
 
@@ -531,6 +534,7 @@ $ git commit -am "修改文件"
 
 ## Git 查看提交历史
 
+```
 Git 提交历史一般常用两个命令：
 
 git log - 查看历史提交记录。
@@ -566,6 +570,11 @@ $ git blame <filename>
 $ git blame README.md 
 文章知识点与官方知识档案匹配，可进一步学习相关知识
 Git技能树Git入门Git简介5633 人正在系统学习中
+```
+
+
+
+
 
 # 八、Git版本控制管理：查看、创建、选择、合并和删除分支
 

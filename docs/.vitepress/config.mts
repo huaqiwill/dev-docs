@@ -18,7 +18,10 @@ export default defineConfig({
     markdown: {
         //行号显示
         lineNumbers: true,
-
+        image: {
+            // 开启图片懒加载
+            lazyLoading: true
+          },
         //时间线
         config: (md) => {
             md.use(timeline);
@@ -36,7 +39,9 @@ export default defineConfig({
             documentRootPath: 'docs',
             useTitleFromFileHeading: true,
             hyphenToSpace: true,
-            excludePattern: ['.vitepress']
+            excludePattern: ['.vitepress'],
+            collapsed: true, //折叠组关闭
+            collapseDepth: 2, //折叠组2级菜单
         }),
 
         socialLinks: [
