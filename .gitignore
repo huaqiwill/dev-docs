@@ -1,0 +1,33 @@
+# 依赖目录 
+node_modules/
+.pnpm-debug.log   # 如果使用 pnpm 
+ 
+# 构建输出 
+.cache/
+dist/
+.temp/  # VitePress 临时文件 
+ 
+# 环境变量 
+.env*
+!.env.example   # 保留示例文件 
+ 
+# 编辑器/IDE 
+.idea/
+.vscode/
+*.swp 
+*.swo 
+.DS_Store 
+ 
+# 调试日志 
+*.log 
+npm-debug.log* 
+yarn-debug.log* 
+yarn-error.log* 
+ 
+# VitePress 自动生成的文件 
+/.vitepress/cache/
+/.vitepress/theme/override-components/  # 动态生成的组件（如果存在）
+ 
+# 测试覆盖率 
+coverage/
+.nyc_output/
